@@ -6,6 +6,7 @@ import { useContext } from 'react';
 import { DataContext } from './context/DataContext';
 import CountrySelector from './components/CountrySelector';
 import Dashboard from './pages/Dashboard';
+import Spinner from './components/Spinner';
 
 const App = () => {
 	const { setIsLoaded, setData, isLoaded, country, data } = useContext(
@@ -22,7 +23,7 @@ const App = () => {
 
 	return (
 		<div className='app'>
-			{isLoaded ? <CountrySelector /> : <h1>Loading...</h1>}
+			{isLoaded ? <CountrySelector /> : <Spinner />}
 
 			<Switch>
 				<Route exact path='/' />
