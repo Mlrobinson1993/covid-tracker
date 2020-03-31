@@ -199,3 +199,60 @@ option:hover {
 .country-selector {
 	margin: auto;
 }
+
+@media (max-width: 1200px) {
+	.grid1 .recharts-wrapper,
+	.grid2 .recharts-wrapper,
+	.grid3 .recharts-wrapper,
+	.grid4 .recharts-wrapper {
+		width: 400px !important;
+	}
+
+	.grid1 svg,
+	.grid2 svg,
+	.grid3 svg,
+	.grid4 svg {
+		width: 400px;
+	}
+}
+@media (max-width: 900px) {
+	.dashboard {
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(5, 1fr);
+		max-width: 100%;
+	}
+
+	.grid1 {
+		grid-column: 1;
+		grid-row: 2;
+	}
+
+	.grid1 .recharts-wrapper,
+	.grid2 .recharts-wrapper,
+	.grid3 .recharts-wrapper,
+	.grid4 .recharts-wrapper {
+		width: 100% !important;
+	}
+
+	.grid1 svg,
+	.grid2 svg,
+	.grid3 svg,
+	.grid4 svg {
+		width: 100%;
+	}
+
+	.grid2 {
+		grid-column: 1;
+		grid-row: 3;
+	}
+
+	.grid3 {
+		grid-column: 1;
+		grid-row: 4;
+	}
+
+	.grid4 {
+		grid-column: 1;
+		grid-row: 5;
+	}
+}
